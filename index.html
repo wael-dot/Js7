@@ -6,8 +6,20 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>
-        github 2nd
-    </h1>
+    <input id="second" type="text" placeholder="Enter A number"> 
+    <span > + </span>  
+    <input id="first" type="text" placeholder="Enter A number">
+    <br>
+    <br>
+    <button id="btn">Calculate</button>
+    <p id="pedo"></p>
+    <script>
+        document.getElementById("btn").addEventListener("click", function () {
+            const v = document.getElementById("first")
+            const c = document.getElementById("second")
+            const p = document.getElementById("pedo")
+            p.innerHTML = Number(v.value) + Number(c.value)
+        })
+    </script>
 </body>
 </html>
